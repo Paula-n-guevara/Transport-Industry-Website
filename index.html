@@ -5,12 +5,39 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Welcome to Splenda Limo Inc.</h1>
+<header id="home">
+    <h1 class="fade-in-text">Welcome to Splenda Limo Inc.</h1>
+    <img src="https://img.freepik.com/free-vector/taxi-app-concept-illustration_52683-36028.jpg" alt="Splenda Limo">
+    <p>Your journey towards luxury, comfort, and style begins here. At Splenda Limo Inc., we specialize in providing premium chauffeuring services for discerning clients who demand only the best. From seamless airport transfers to personalized journeys, experience the pinnacle of luxury travel with us.</p>
+
 </header>
+
+<nav>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#fleet">Meet Our Fleet</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</nav>
+
+
 <main>
-    <section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded on the principles of reliability, professionalism, and unparalleled service quality, Splenda Limo Inc. has been redefining luxury transportation for years. Our experienced team of professional chauffeurs and an elite fleet of high-end vehicles stand ready to serve your unique travel needs. Travel with us, and discover a new standard in luxury transport.</p>
+
+    </section>
+    <section id="book">
         <h2>Book a ride</h2>
+        <p>Experience the ultimate in comfort and luxury with Splenda Limo Inc. Book our services for your next airport transfer or personal journey, and let us take care of the details. With our uncompromising commitment to reliability and service excellence, your satisfaction is guaranteed.</p>
         <div class="booking-container">
             <form id="booking-form">
                 <input type="text" id="name" placeholder="Your name">
@@ -19,6 +46,42 @@
             </form>
         </div>
     </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us today to discuss your luxury transportation needs. Our professional team is on hand to provide personalized service and answer any questions you may have. Choose Splenda Limo Inc. for reliable, professional, and unrivaled luxury chauffeuring services.</p>
+
+        <p>Contact information for Splenda Limo Inc.</p>
+    </section>
+
+    <section id="fleet">
+        <h2>Meet Our Fleet</h2>
+        <p>Our meticulously maintained fleet features a range of luxury vehicles equipped with state-of-the-art amenities. Each vehicle is chosen for its superior comfort, style, and safety features, ensuring a smooth and enjoyable journey for every passenger. Explore our fleet and find the perfect match for your travel requirements.</p>
+
+        <!-- Add images and descriptions of your vehicles here -->
+    </section>
+
+    <!-- Add Reviews section with carousel -->
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <p>Don't just take our word for it—read what our satisfied customers have to say about their experiences with Splenda Limo Inc. We take pride in exceeding our clients' expectations and delivering a luxury service that is second to none.</p>
+
+        <div class="slideshow-container">
+            <!-- Add reviews here -->
+            <div class="slide">
+                <img class="review-img" src="review-image-url-1" alt="Review 1">
+                <p class="review-text">Review 1</p>
+            </div>
+            <div class="slide">
+                <img class="review-img" src="review-image-url-2" alt="Review 2">
+                <p class="review-text">Review 2</p>
+            </div>
+            <div class="slide">
+                <img class="review-img" src="review-image-url-3" alt="Review 3">
+                <p class="review-text">Review 3</p>
+            </div>
+        </div>
+    </section>
+
 </main>
 <footer>
     <p>© 2023 Splenda Limo Inc.</p>
