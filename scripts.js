@@ -42,6 +42,7 @@ document.getElementById('booking-form').addEventListener('submit', function(even
     name.value = '';
     destination.value = '';
 });
+
 /*Adding in the hamburger menu functionality */
 
 function toggleMenu() {
@@ -50,14 +51,35 @@ function toggleMenu() {
         menu.classList.remove('active');
     } else {
         menu.classList.add('active');
-    }var slides = Array.from(document.querySelectorAll('.slide'));
-    var currentSlide = 0;
-
-    function nextSlide() {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add('active');
     }
-
-    setInterval(nextSlide, 5000);
 }
+
+/* Adding in the slide show functionality */
+
+var slides = Array.from(document.querySelectorAll('.slide'));
+var currentSlide = 0;
+
+function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+setInterval(nextSlide, 5000); // Change this to adjust the slide transition time
+
+/*loading screen --> hiding it after*/
+window.addEventListener('load', function() {
+    var loadingScreen = document.getElementById('loading');
+    loadingScreen.style.display = 'none';
+});
+/*intentionally delays the screen*/
+window.addEventListener('load', function() {
+    setTimeout(function(){
+        document.body.classList.add('loaded');
+    }, 3000); // delay in milliseconds
+});
+
+window.addEventListener('load', function() {
+    document.body.classList.add('loaded');
+});
+
